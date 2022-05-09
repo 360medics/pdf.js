@@ -2093,11 +2093,7 @@ const PDFViewerApplication = {
 
 let validateFileURL;
 if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
-  const HOSTED_VIEWER_ORIGINS = [
-    "null",
-    "http://mozilla.github.io",
-    "https://mozilla.github.io",
-  ];
+  const HOSTED_VIEWER_ORIGINS = ["null", "https://f.360medics.com"];
   validateFileURL = function (file) {
     if (!file) {
       return;
